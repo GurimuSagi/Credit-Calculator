@@ -43,9 +43,13 @@ select{
 }
 
 button{
-  width:30vw;
   border: 0.1vw rgb(73 66 118) solid;
   text-transform: uppercase;
+  font-size: larger;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 0.3vw;
+  padding-top: 0.3vw;
 }
 button:hover{
   background-color: rgb(221, 221, 221);
