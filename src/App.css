@@ -1,38 +1,87 @@
-.App {
+header{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #9594d7;
+  font-family: system-ui;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main{
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-auto-flow: row dense;
+  justify-content:flex-start;
+  text-align: start;
+  font-size: 1vw;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form{
+  background-color: #c0d3d9;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border: 0.5vw rgb(73 66 118) solid;
+  padding-bottom: 1vw;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  text-transform: uppercase;
+  font-size: 2vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  font-size: 1vw;
+  width:7vw;
+  height:1vw;
+}
+
+select{
+  font-size: 1vw;
+}
+
+button{
+  width:30vw;
+  border: 0.1vw rgb(73 66 118) solid;
+  text-transform: uppercase;
+}
+button:hover{
+  background-color: rgb(221, 221, 221);
+  border: 0.1vw rgb(59, 54, 95) solid;
+}
+#monthlyPayment{
+  opacity: 1;
+}
+
+#maxMonthlyPayment{
+  opacity: 0.5;
+}
+
+#minMonthlyPayment{
+  opacity: 0.5;
+}
+
+#creditParameters{
+  display:block;
+  position: static;
+}
+
+#mainResults{
+  display:block;
+  position: static;
+}
+
+#refinancingDetails{
+  display:none;
+  position: static;
+  grid-column: span 2;
+}
+
+th,td{
+  border: 0.1vw solid;
+  border-collapse: collapse;
+  padding-left:0.7vw;
+  padding-right:0.7vw;
 }
